@@ -6,7 +6,16 @@
   --logo-color: #4d5ae5;
   --background-color: #ffffff;
   --section-color: #f4f4fd;
+  --border-color: #e7e9fc;
 }
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+
 /*ПАЛИТРА__________________________________________*/
 /*logo  #4D5AE5 #F4F4FD  or  #4D5AE5 #2E2F42 ______*/
 /*основной цвет  #434455 __________________________*/
@@ -15,13 +24,20 @@
 /*секция Our Team   #F4F4FD _______________________*/
 /*футер #2E2F42 ___________________________________*/
 /*цвет кнопки  #404BBF ____________________________*/
-
+/*цвет рамки #e7e9fc ______________________________*/
 /*ГЛОБАЛЬНІЕ ПРАВКИ ДЛЯ ВСЕЙ СТРАНИЦИ______________*/
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--brand-color);
   background-color: var(--background-color);
+}
+.container {
+ width: 1158px; 
+ padding-left: 15px;
+ padding-right: 15px;
+ margin: 0 auto;
+ outline: 2px solid red;
 }
 
 .list {
@@ -31,8 +47,10 @@ body {
   text-decoration: none;
 }
 /*HEADER____________________________________________*/
-/* .page-header.{
-} */
+.page-header {
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-color);
+}
 /* .header-navigation{
 } */
 .header-logo {
@@ -86,6 +104,7 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--background-color);
+margin-bottom: 48px;
 }
 .hero-button {
 font-family: "Roboto", sans-serif;
@@ -99,6 +118,11 @@ align-items: center;
 letter-spacing: 0.04em;
 color: var(--background-color);
 cursor: pointer;
+display: flex;
+flex-direction: row;
+padding: 16px 32px;
+gap: 10px;
+margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -116,7 +140,8 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: var(--second-color)
+color: var(--second-color);
+margin-bottom: 8px;
 }
 .list-text {
 line-height: 1.5;
@@ -132,6 +157,7 @@ letter-spacing: 0.02em;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--second-color);
+  margin-bottom: 72px;
 }
 /* .service-list {
 } */
@@ -148,14 +174,16 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--second-color);
+margin-bottom: 72px;
 }
 /* .team-list {
 } */
 .list-member {
   background-color: var(--background-color);
 }
-/* .member-image {
-} */
+.member-image {
+  margin-bottom: 32px;
+}
 .member-name {
 font-weight: 500;
 font-size: 20px;
@@ -163,6 +191,7 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--second-color);
+margin-bottom: 8px;
 }
 .member-profession {
   line-height: 1.5;
@@ -202,12 +231,16 @@ color: var(--second-color);
 } */
 /* .items-link {
 } */
+.items-image{
+  margin-bottom: 32px;
+}
 .items-title {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--second-color);
+margin-bottom: 8px;
 }
 .items-text {
 line-height: 1.5;
