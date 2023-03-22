@@ -122,7 +122,8 @@ display: flex;
 flex-direction: row;
 padding: 16px 32px;
 gap: 10px;
-margin: 0 auto;
+margin-right: auto;
+margin-left: auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -161,8 +162,9 @@ letter-spacing: 0.02em;
 }
 /* .service-list {
 } */
-/* .site-image {
-} */
+.site-image {
+display: block;
+}
 /*TEAM_______________________________________________*/
 .section-team {
   background-color: var(--section-color);
@@ -180,9 +182,14 @@ margin-bottom: 72px;
 } */
 .list-member {
   background-color: var(--background-color);
+  width: 264px;
+  height: 380px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .member-image {
   margin-bottom: 32px;
+  display: block;
 }
 .member-name {
 font-weight: 500;
@@ -233,6 +240,7 @@ margin-bottom: 8px;
 } */
 .items-image{
   margin-bottom: 32px;
+  display: block;
 }
 .items-title {
 font-weight: 500;
