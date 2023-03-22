@@ -37,7 +37,6 @@ body {
  padding-left: 15px;
  padding-right: 15px;
  margin: 0 auto;
- outline: 1px solid red;
 }
 
 .list {
@@ -80,10 +79,11 @@ body {
 .navigation-list {
 display: flex;
 margin-left: 76px;
+gap: 40px;
 }
-.navigation-list .item + .item {
+/* .navigation-list .item + .item {
   margin-left: 40px;
-}
+} */
 .list-link {
 font-weight: 500;
 line-height: 1.5;
@@ -131,7 +131,8 @@ padding-bottom: 24px;
   background-color: var(--second-color);
 }
 .section-hero .container {
-  padding: 188px 133px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
 font-size: 56px;
@@ -139,10 +140,12 @@ line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--background-color);
+width: 496px;
 
+display: block;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: 48px;
-padding-left: 171px;
-padding-right: 171px;
 }
 .hero-button {
 font-family: "Roboto", sans-serif;
@@ -158,7 +161,6 @@ cursor: pointer;
 
 display: block;
 padding: 16px 32px;
-gap: 10px;
 margin-right: auto;
 margin-left: auto;
 align-items: center;
@@ -172,8 +174,12 @@ background-color: var(--button-color);
 } */
 /* .info-title {
 } */
-/* .info-list {
-} */
+.info-list {
+display: flex;
+gap: 24px;
+padding-top: 120px;
+padding-bottom: 120px;
+}
 .list-title {
 font-weight: 500;
 font-size: 20px;
@@ -185,10 +191,13 @@ margin-bottom: 8px;
 .list-text {
 line-height: 1.5;
 letter-spacing: 0.02em;
+width: 264px;
 }
 /*SERVICE____________________________________________*/
-/* .section-service {
-} */
+.section-service {
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
 .service-title {
   font-size: 36px;
   line-height: 1.11;
@@ -197,15 +206,22 @@ letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--second-color);
   margin-bottom: 72px;
+  
 }
-/* .service-list {
-} */
+.service-list {
+  display: flex;
+  gap: 24px;
+}
 .site-image {
 display: block;
 }
 /*TEAM_______________________________________________*/
 .section-team {
   background-color: var(--section-color);
+}
+.section-team .container {
+  padding-top: 120px;
+padding-bottom: 120px;
 }
 .team-title {
 font-size: 36px;
@@ -214,10 +230,14 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--second-color);
+
 margin-bottom: 72px;
 }
-/* .team-list {
-} */
+.team-list {
+display: flex;
+gap: 24px;
+
+}
 .list-member {
   background-color: var(--background-color);
   width: 264px;
@@ -248,6 +268,14 @@ margin-bottom: 8px;
 } */
 /* .portfolio-title {
 } */
+.portfolio-filter {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
 .filter-button {
   font-family: 'Roboto', sans-serif;
   background-color: var(--section-color);
@@ -260,7 +288,11 @@ margin-bottom: 8px;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--logo-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   cursor: pointer;
+  
+  padding: 12px 24px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -270,9 +302,19 @@ margin-bottom: 8px;
   border-radius: 4px;
   color: var(--background-color);
 }
-/* .portfolio-list {
-} */
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+gap: 48px 24px;
+padding-bottom: 120px;
+}
 /* .list-items {
+  box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 } */
 /* .items-link {
 } */
@@ -287,11 +329,13 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--second-color);
 margin-bottom: 8px;
+padding-left: 16px;
 }
 .items-text {
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--brand-color);
+padding-left: 16px;
 }
 /* .items-image {
 } */
@@ -299,6 +343,9 @@ color: var(--brand-color);
 /* FOOTER______________________________________ */
 .page-footer {
   background: var(--second-color);
+  
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   text-transform: uppercase;
@@ -308,8 +355,9 @@ color: var(--brand-color);
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
-  padding-top: ;
+  
+  display: block;
+  margin-bottom: 16px;
 }
 .footer-logo-span {
   color: var(--section-color);
@@ -318,4 +366,5 @@ color: var(--brand-color);
   color: var(--section-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
