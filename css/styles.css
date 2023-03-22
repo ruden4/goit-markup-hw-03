@@ -130,13 +130,19 @@ padding-bottom: 24px;
 .section-hero {
   background-color: var(--second-color);
 }
+.section-hero .container {
+  padding: 188px 133px;
+}
 .hero-title {
 font-size: 56px;
 line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--background-color);
+
 margin-bottom: 48px;
+padding-left: 171px;
+padding-right: 171px;
 }
 .hero-button {
 font-family: "Roboto", sans-serif;
@@ -150,8 +156,7 @@ letter-spacing: 0.04em;
 color: var(--background-color);
 cursor: pointer;
 
-display: flex;
-flex-direction: row;
+display: block;
 padding: 16px 32px;
 gap: 10px;
 margin-right: auto;
@@ -303,6 +308,8 @@ color: var(--brand-color);
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  padding-top: ;
 }
 .footer-logo-span {
   color: var(--section-color);
