@@ -351,7 +351,6 @@ color: var(--brand-color);
 /* FOOTER______________________________________ */
 .page-footer {
   background: var(--second-color);
-  
   padding-top: 100px;
   padding-bottom: 100px;
 }
